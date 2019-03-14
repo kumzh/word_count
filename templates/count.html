@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>count page</title>
+</head>
+<body>
+<h1>count page</h1>
+<a href="..">返回主页</a>
+<h2>word count:{{ count }}</h2>
+<h2>text: {{ txt }}</h2>
+{% for word,num in sortcount %}
+    {{ word }}-{{ num }}
+    <br>
+{% endfor %}
+
+
+</body>
+</html>
